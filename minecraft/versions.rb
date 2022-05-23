@@ -20,7 +20,7 @@ module Minecraft
 
     def self.game_versions
       response = HTTParty.get(VERSION_MANIFEST)
-      response.parsed_response['versions']
+      response.parsed_response["versions"]
     end
   end
 end
